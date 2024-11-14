@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flavorBowl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="navbar" id="navbar">
+        <div class="logo">Flavor Bowl</div>
+        <label class="hamburger" onclick="navbarFunction()">☰</label>
+        <nav class="nav-links" id="navlink">
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="main-container">
+        <div class="left-section">
+            <h1>Where Every Bite Tells a Story</h1>
+            <p>Discover a world of fresh, wholesome ingredients crafted into vibrant, satisfying bowls. At Flavor Bowl, we believe in bringing people together over meals that nourish the body and delight the senses. Whether you're craving bold flavors, comforting classics, or nutritious options, our bowls offer something for everyone.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="right-section">
+        </div>
+    </div>
+     <section class="hero">
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Experience the taste of freshness in every bite</p>
+        <a href="./menu.html" class="cta-button">View Menu</a>
+    </section>
+   
+
+    <!-- Featured Dishes Section -->
+    <section class="featured-dishes">
+        <h2>Featured Dishes</h2>
+        <div class="dish-grid">
+            <div class="dish">
+                <img src="./images/asian.jpeg" alt="Dish 1">
+                <h3>Asian Fusion Bowl</h3>
+                <p>A vibrant mix of teriyaki chicken, crunchy veggies, and jasmine rice, drizzled with a spicy peanut sauce.</p>
+            </div>
+            <div class="dish">
+                <img src="./images/Mediterranean Harvest Bowl.jpeg" alt="Dish 2">
+                <h3>Mediterranean Harvest Bowl</h3>
+                <p>Quinoa, roasted vegetables, and falafel, served with tangy tzatziki and a sprinkle of feta cheese.</p>
+            </div>
+            <div class="dish">
+                <img src="./images/images.jpeg" alt="Dish 2">
+                <h3>Green Power Bowl</h3>
+                <p>Packed with fresh greens, avocado, edamame, and a zesty lime dressing – perfect for a health boost.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <div class="testimonial">
+            <p>"The food here is absolutely amazing! Fresh and flavorful every time."</p>
+            <span>- Jane Doe</span>
+        </div>
+        <div class="testimonial">
+            <p>"A fantastic dining experience. The ambiance is cozy and welcoming."</p>
+            <span>- John Smith</span>
+        </div>
+        <div class="testimonial">
+            <p>"The rice rice is too good "</p>
+            <span>- Sara Shade</span>
+        </div>
+        <div class="testimonial">
+            <p>""Flavour Bowl has changed my lunch game. Quick, healthy, and so tasty!" "</p>
+            <span>- Michael P</span>
+        </div>
+    </section>
+
+    <!-- footer Section -->
+    <section class="contact">
+        <h2>Visit Us</h2>
+        <p>Flavor Bowl, DHA Phase V,Karachi</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: flavorbowl@gmail.com</p>
+        <p>Open: Mon-Sun, 11 AM - 11 PM</p>
+    </section>
+</body>
+</html>
+<script>
+    const navbarFunction = ()=>{
+        const navlink = document.getElementById("navlink")
+        if(navlink.className=="nav-links"){
+            navlink.classList.add("resLinks")
+        }
+        else{
+            navlink.classList.remove("resLinks")
+
+        }
+        console.log(navlink)
+
+    }
+</script>
+</body>
+</html>
+
+
